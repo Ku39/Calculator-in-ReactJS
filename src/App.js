@@ -5,7 +5,6 @@ import {useState} from "react"
 let result = 0;
 
 function App() {
-    
     // let [up, setUp] = useState("0");
     let [down, setDown] = useState("0");
 
@@ -28,11 +27,9 @@ function App() {
             console.log(result)
         }
     }
-
     const symbols = ["/","*","-","+","."]
     
     function click(arg){
-
         if(down == "0"){
             let check = false
             symbols.forEach(item => {
@@ -67,7 +64,6 @@ function App() {
                 })
                 setDown(down = down+arg)
             }
-            
         }
         
     }
